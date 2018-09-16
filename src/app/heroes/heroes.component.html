@@ -4,7 +4,11 @@
   {{ hero.id }}
 </div>
 <div>
-  <label>name:
-    <input type="text" [(ngModel)]="hero.name" placeholder="name">
-  </label>
+    <mat-form-field>
+      <input 
+        matInput 
+        placeholder="name"
+        name="name"
+        [(ngModel)]="hero.name">
+    </mat-form-field>
 </div>
