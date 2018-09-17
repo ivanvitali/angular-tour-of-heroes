@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { MaterialModule } from './material.module';
 import { HeroesListComponent } from './heroes/heroes-list/heroes-list.component';
+import { HeroComponent } from './heroes/heroes-list/hero/hero.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroesComponent,
-    HeroesListComponent
+    HeroesListComponent,
+    HeroComponent
   ],
   imports: [
     BrowserModule,
