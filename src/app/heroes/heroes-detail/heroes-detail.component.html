@@ -1,0 +1,13 @@
+<h2> {{ heroSelected.name | uppercase }} Details</h2>
+  <div>
+    <span>id: </span>
+    {{ heroSelected.id }}
+  </div>
+  <div>
+      <mat-form-field>
+        <input 
+          matInput 
+          placeholder="name"
+          [(ngModel)]="heroSelected.name">
+      </mat-form-field>
+  </div>
