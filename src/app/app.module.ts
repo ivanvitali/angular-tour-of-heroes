@@ -8,7 +8,7 @@ import { MaterialModule } from './material.module';
 import { HeroesListComponent } from './heroes/heroes-list/heroes-list.component';
 import { HeroComponent } from './heroes/heroes-list/hero/hero.component';
 import { HeroService } from './heroes/shared/hero.service';
-import { HeroesDetailComponent } from './heroes/heroes-detail/heroes-detail.component';
+import { HeroDetailComponent } from './heroes/hero-detail/hero-detail.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +16,7 @@ import { HeroesDetailComponent } from './heroes/heroes-detail/heroes-detail.comp
     HeroesComponent,
     HeroesListComponent,
     HeroComponent,
-    HeroesDetailComponent
+    HeroDetailComponent
   ],
   imports: [
     BrowserModule,

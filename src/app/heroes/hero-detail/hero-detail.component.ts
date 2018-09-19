@@ -2,11 +2,11 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Hero } from '../shared/hero.model';
 
 @Component({
-  selector: 'app-heroes-detail',
-  templateUrl: './heroes-detail.component.html',
-  styleUrls: ['./heroes-detail.component.css']
+  selector: 'app-hero-detail',
+  templateUrl: './hero-detail.component.html',
+  styleUrls: ['./hero-detail.component.css']
 })
-export class HeroesDetailComponent implements OnInit {
+export class HeroDetailComponent implements OnInit {
 
   @Input() heroSelected: Hero;
 
