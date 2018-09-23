@@ -9,16 +9,19 @@ import { Hero } from '../shared/hero.model';
 })
 export class HeroesListComponent implements OnInit {
 
-  heroes: Hero[];
-  selectedHero:Hero = null;
+  heroes: Hero[] = [];
+  selectedHero: Hero = null;
+
   @Output() heroSelectedChanged: EventEmitter<Hero> = new EventEmitter;
 
-  constructor(private heroService: HeroService) { }
+  constructor( private heroService: HeroService ) { }
 
   ngOnInit() {
-    this.heroService.getHeroes().then((heroesArray) => {
+    this.heroService
+      .getHeroes()
+      .then((heroesArray) => {
       this.heroes = heroesArray;
-    })
+    });
   }
 
   onSelect(hero: Hero): void {
