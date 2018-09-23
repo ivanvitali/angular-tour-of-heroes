@@ -1,13 +1,13 @@
-<h2> {{ heroSelected.name | uppercase }} Details</h2>
+<h2> {{ hero.name | uppercase }} Details</h2>
   <div>
     <span>id: </span>
-    {{ heroSelected.id }}
+    {{ hero.id }}
   </div>
   <div>
       <mat-form-field>
         <input 
           matInput 
           placeholder="name"
-          [(ngModel)]="heroSelected.name">
+          [(ngModel)]="hero.name">
       </mat-form-field>
   </div>

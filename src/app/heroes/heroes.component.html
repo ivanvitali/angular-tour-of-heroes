@@ -1,6 +1,6 @@
 <app-hero-detail 
   *ngIf="selectedHero" 
-  [heroSelected]="selectedHero"></app-hero-detail>
+  [hero]="selectedHero"></app-hero-detail>
 
 <app-heroes-list 
   (heroSelectedChanged)="getSelectedHero($event)"></app-heroes-list>

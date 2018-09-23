@@ -8,7 +8,7 @@ import { Hero } from '../shared/hero.model';
 })
 export class HeroDetailComponent implements OnInit {
 
-  @Input() heroSelected: Hero;
+  @Input() hero: Hero;
 
   constructor() { }
 
